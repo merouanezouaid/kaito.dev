@@ -1,0 +1,540 @@
+@font-face {
+    font-family: 'Windows XP Tahoma';
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/WindowsFonts/WindowsXPTahoma.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/WindowsFonts/WindowsXPTahoma.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --wmp-blue: #236B8E;
+    --wmp-light-blue: #94B6CE;
+    --wmp-dark-blue: #0A246A;
+    --xp-title-blue: #1C55A5;
+    --xp-title-light: #2B7DF7;
+    --xp-text: #000000;
+    --xp-menu-text: #FFFFFF;
+}
+
+body {
+    overflow: hidden;
+    font-family: Tahoma, 'Noto Sans', sans-serif;
+    background-size: cover;
+    background-image: url(./images/xp-background.jpg);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 20;
+    background-position: center;
+}
+
+.wmp-container {
+    width: 800px;
+    height: 600px;
+    background-color: var(--wmp-blue);
+    border: 1px solid #000;
+    border-radius: 3px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Title bar styles */
+.title-bar {
+    background: linear-gradient(to right, var(--xp-title-blue), var(--xp-title-light));
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    color: white;
+    font-family: Tahoma, 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.title::before {
+    content: '';
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAAbwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAB5SURBVDiNY2AYBYMPMBKrMDk5+T8hNQwMDAxz5sxhZGBgYGAhxgBCgImQAUQBFmIVV1VV/SfWgKqqKoIGENWIyIb///+fKC/8/v2bES4wZ84cRnyaGRgYGP7//89YVlb2H5fzZ8+ezYiuBsUFhARl1ABGBgYGhsEVvQDCYBf72qh5CAAAAABJRU5ErkJggg==');
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/* Window controls styling */
+.window-controls {
+    display: flex;
+    gap: 1px;
+    margin-right: 2px;
+}
+
+.window-controls button {
+    width: 16px;
+    height: 14px;
+    padding: 0;
+    border: 1px solid #104080;
+    background-color: #1553A9;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.window-controls button i {
+    color: white;
+    font-size: 10px;
+}
+
+.window-controls .minimize i {
+    margin-top: -4px;
+    font-size: 12px;
+}
+
+.window-controls .maximize i {
+    font-size: 8px;
+    margin-top: 1px;
+}
+
+.window-controls .close i {
+    font-size: 12px;
+}
+
+.window-controls button:hover {
+    background-color: #1E66CC;
+}
+
+.window-controls button:active {
+    background-color: #0E3E7D;
+}
+
+/* Menu bar styles */
+.menu-bar {
+    background-color: var(--wmp-blue);
+    height: 20px;
+    display: flex;
+    padding: 0 5px;
+    border-bottom: 1px solid var(--wmp-dark-blue);
+    font-family: Tahoma, 'Arial Narrow', sans-serif;
+    font-size: 11px;
+}
+
+.menu-item {
+    color: white;
+    padding: 2px 10px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+/* Main content area */
+.main-content {
+    display: flex;
+    height: calc(100% - 110px);
+}
+
+/* Update player section layout */
+.player-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: black;
+}
+
+/* Update video window to show album art and visualization */
+.video-window {
+    flex: 1;
+    background-color: black;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Update the info bar styles */
+.info-bar {
+    background: #000;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 6px;
+    border-radius: 2px;
+}
+
+/* Keep the existing visualization controls and total time styles */
+.visualization-controls {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.visualization-controls button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: 'Webdings';
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.visualization-name {
+    color: #fff;
+    font-size: 11px;
+}
+
+.total-time {
+    color: #fff;
+    font-size: 11px;
+}
+
+/* Album art and track info */
+.album-display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.album-art {
+    max-width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.track-info {
+    text-align: center;
+    color: #0f0;
+    font-size: 11px;
+}
+
+/* Hide album art when visualization is active */
+.visualization.active ~ .album-display {
+    opacity: 0;
+}
+
+/* Update bottom controls section */
+.bottom-player-bar {
+    background: linear-gradient(to bottom, #7BA5C7 0%, #4B82B4 100%);
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+/* Add styles for progress container */
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 4px;
+}
+
+.seek-bar {
+    flex: 1;
+    height: 6px;
+    background: #153455;
+    border: 1px solid #0A1B2A;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+.seek-bar-fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(to right, #4FE44F 0%, #43C743 100%);
+    border-radius: 2px;
+    transition: width 0.1s linear;
+}
+
+.time-display {
+    color: #FFFFFF;
+    font-family: 'Arial Narrow', 'Microsoft Sans Serif', Tahoma, sans-serif;
+    font-size: 11px;
+    min-width: 45px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Update transport controls style */
+.transport-controls {
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    gap: 2px;
+    background: transparent;
+    border: none;
+}
+
+.transport-controls button {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: linear-gradient(to bottom, #A8C5E0 0%, #7BA5C7 50%, #4B82B4 100%);
+    color: #FFFFFF;
+    font-family: 'Webdings';
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.transport-controls button:hover {
+    background: linear-gradient(to bottom, #B8D5F0 0%, #8BB5D7 50%, #5B92C4 100%);
+}
+
+.transport-controls button:active {
+    background: linear-gradient(to bottom, #4B82B4 0%, #7BA5C7 50%, #A8C5E0 100%);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+}
+
+/* Update volume control to match XP style */
+.volume-control {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.volume-icon {
+    color: #FFFFFF;
+    font-family: 'Webdings';
+    font-size: 14px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.volume-slider {
+    width: 70px;
+    height: 6px;
+    background: #153455;
+    border: 1px solid #0A1B2A;
+    border-radius: 3px;
+    position: relative;
+}
+
+.volume-slider-fill {
+    height: 100%;
+    width: 70%;
+    background: linear-gradient(to right, #4FE44F 0%, #43C743 100%);
+    border-radius: 2px;
+}
+
+/* Update bottom player bar to accommodate new controls */
+.bottom-player-bar {
+    background: linear-gradient(to bottom, #7BA5C7 0%, #4B82B4 100%);
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.progress-container {
+    background: #000000;
+    padding: 4px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Update playlist styling */
+.playlist-area {
+    width: 200px;
+    background-color: black;
+    border-left: 1px solid #333;
+    height: 100%;
+    color: white;
+}
+
+.playlist-header {
+    background: #222;
+    border-bottom: 1px solid #333;
+    padding: 5px;
+    font-family: 'Windows XP Tahoma', 'Microsoft Sans Serif', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: white;
+}
+
+.playlist-content {
+    background-color: black;
+    color: white;
+    font-family: 'Windows XP Tahoma', 'Microsoft Sans Serif', sans-serif;
+    font-size: 11px;
+}
+
+.playlist-item {
+    padding: 2px 5px;
+    cursor: default;
+    border-bottom: 1px solid #333;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 150px;
+    background: linear-gradient(135deg, #307BAF 0%, #234F72 100%);
+    padding: 10px 0;
+}
+
+.sidebar div {
+    color: white;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-family: Tahoma, 'Microsoft Sans Serif', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.3px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar div:first-child {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.sidebar div:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar div.active {
+    background-color: rgba(255, 255, 255, 0.15);
+    font-weight: bold;
+}
+
+/* Player area styles */
+.player-area {
+    flex: 1;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-window {
+    flex: 1;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-item:hover {
+    background-color: #2B7DF7;
+    color: white;
+}
+
+/* Add these styles for the visualization */
+.visualization {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.visualization.active {
+    opacity: 1;
+}
+
+.visualization canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.track-info {
+    position: relative;
+    z-index: 2;
+}
+
+/* Add styles for content sections */
+.content-section {
+    padding: 20px;
+    color: white;
+    height: 100%;
+    overflow-y: auto;
+    font-size: 11px;
+}
+
+.content-section h1 {
+    color: #4FE44F;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Profile section styles */
+.profile-section {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.profile-section h2 {
+    color: #94B6D3;
+    margin-bottom: 15px;
+}
+
+.profile-section p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Projects grid styles */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: rgba(74, 130, 180, 0.1);
+    border: 1px solid #4A82B4;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* Add more specific styles for each section */
+.playlist-content, 
+.playlist-header,
+.menu-item,
+.time-display,
+.visualization-name {
+    font-size: 11px;
+}
+
+/* Add these styles for the track header */
+.track-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 10;
+    background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+}
+
+.track-header .artist {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.track-header .track-name {
+    color: white;
+    font-size: 16px;
+}

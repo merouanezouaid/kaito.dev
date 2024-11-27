@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio v2.0</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/webfontworld/WindowsFonts/WindowsXPTahoaRegular.css">
+    <link rel="stylesheet" href="https://db.onlinewebfonts.com/c/5c423f96b2b34a15665475e11c5d5f18?family=Franklin+Gothic+Medium" type="text/css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+</head>
+<body>
+    <div class="wmp-container">
+        <!-- Add audio player at the top level -->
+        <audio id="audioPlayer" style="display: none;">
+            <source src="music/Find My Way Home- Sammy Virji.m4a" type="audio/mp4">
+        </audio>
+        <!-- Title bar -->
+        <div class="title-bar">
+            <div class="title">Kai Media Player</div>
+            <div class="window-controls">
+                <button class="minimize" title="Minimize">
+                    <i class="bi bi-dash-lg"></i>
+                </button>
+                <button class="maximize" title="Maximize">
+                    <i class="bi bi-square"></i>
+                </button>
+                <button class="close" title="Close">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu bar -->
+        <div class="menu-bar">
+            <div class="menu-item">File</div>
+            <div class="menu-item">View</div>
+            <div class="menu-item">Play</div>
+            <div class="menu-item">Tools</div>
+            <div class="menu-item">Help</div>
+        </div>
+
+        <div class="main-content">
+            <!-- Left sidebar -->
+            <div class="sidebar">
+                <div class="now-playing" data-section="about">About Me</div>
+                <div class="media-guide" data-section="projects">Projects</div>
+                <div class="copy-cd" data-section="highlights">Recent Highlights</div>
+                <div class="media-library" data-section="presentations">Tech Talks</div>
+                <div class="radio-tuner" data-section="socials">Connect</div>
+            </div>
+
+            <!-- Main player section -->
+            <div class="player-section">
+                <div class="video-window">
+                    <!-- Track header with artist and title -->
+                    <div class="track-header">
+                        <div class="artist">welcome to my portfolio</div>
+                        <div class="track-name">Find My Way Home - by Sammy Virji</div>
+                    </div>
+
+                    <!-- Album art (visible when paused) -->
+                    <div class="album-display">
+                        <img src="https://i.scdn.co/image/ab67616d0000b273935a1712f56a9ee9d51ffd6e" alt="Album Art" class="album-art">
+                    </div>
+
+                    <!-- Visualization -->
+                    <div class="visualization">
+                        <!-- Visualization content -->
+                    </div>
+                </div>
+
+                <!-- Info bar (moved outside bottom-player-bar) -->
+                <div class="info-bar">
+                    <div class="visualization-controls">
+                        <button class="prev-viz">3</button>
+                        <button class="play-viz">4</button>
+                        <span class="visualization-name">Ambience: Water</span>
+                    </div>
+                    <div class="total-time">Total Time: 3:33</div>
+                </div>
+
+                <!-- Bottom player bar -->
+                <div class="bottom-player-bar">
+                    <!-- Progress bar -->
+                    <div class="progress-container">
+                        <div class="seek-bar">
+                            <div class="seek-bar-fill"></div>
+                        </div>
+                        <div class="time-display">00:00</div>
+                    </div>
+
+                    <!-- Transport controls -->
+                    <div class="transport-controls">
+                        <button class="prev">9</button>
+                        <button class="play">4</button>
+                        <button class="stop">=</button>
+                        <button class="next">:</button>
+                        <div class="volume-control">
+                            <span class="volume-icon">X</span>
+                            <div class="volume-slider">
+                                <div class="volume-slider-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Playlist area (now on right) -->
+            <div class="playlist-area">
+                <div class="playlist-header">
+                   deep house playlist ▾
+                </div>
+                <div class="playlist-content">
+                    <div class="playlist-item">+ Like Humans Do (radio edit)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
