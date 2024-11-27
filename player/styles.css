@@ -20,7 +20,7 @@ body {
     overflow: hidden;
     font-family: Tahoma, 'Noto Sans', sans-serif;
     background-size: cover;
-    background-image: url("./images/xp-background.jpg");
+    background-image: url("./player/images/xp-background.jpg");
     background-repeat: no-repeat;
     min-height: 100vh;
     margin: 20;
