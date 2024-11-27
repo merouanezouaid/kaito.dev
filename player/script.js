@@ -529,15 +529,35 @@ document.addEventListener('DOMContentLoaded', function() {
         about: {
             title: "About Me",
             content: `
-                <div class="profile-section">
-                    <h2>Merouane Zouaid</h2>
-                    <p class="bio">Machine Learning Engineering student in Rabat, Morocco.</p>
-                    <p>Co-founder of Alts Morocco, an open collective where people work on their own ideas.</p>
-                    <p>Previously Growth Hacker @buildspace for season 5</p>
-                    <p>Building AI-powered tools like YouLoop, Dwayat AI, Complete AI, Omates...</p>
-                    <p>Launched "30 days of ML," the first ebook in Morocco for machine learning.</p>
-                    <p>Currently building kitaby.ma, an online marketplace for new and used books in Morocco.</p>
-                    <p class="fun-fact">Fun fact: I love football! ⚽</p>
+                <div class="profile-section" style="
+                    background-image: url('./image.png');
+                    background-size: 50% auto;
+                    background-position: top -10px right -10px;
+                    background-repeat: no-repeat;
+                    position: relative;
+                ">
+                    <!-- Add an overlay div for transparency -->
+                    <div style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background-color: rgba(0, 0, 0, 0.75);
+                        z-index: 1;
+                    "></div>
+                    
+                    <!-- Wrap content in a div to position above overlay -->
+                    <div style="position: relative; z-index: 2;">
+                        <h2>Merouane Zouaid</h2>
+                        <p class="bio">Machine Learning Engineering student in Rabat, Morocco.</p>
+                        <p>Co-founder of Alts Morocco, an open collective where people work on their own ideas.</p>
+                        <p>Previously Growth Hacker @buildspace for season 5</p>
+                        <p>Building AI-powered tools like YouLoop, Dwayat AI, Complete AI, Omates...</p>
+                        <p>Launched "30 days of ML," the first ebook in Morocco for machine learning.</p>
+                        <p>Currently building kitaby.ma, an online marketplace for new and used books in Morocco.</p>
+                        <p class="fun-fact">Fun fact: I love football! ⚽</p>
+                    </div>
                 </div>
             `
         },
