@@ -615,21 +615,17 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `
                 <div class="presentations-list">
                     <div class="presentation-item">
-                        <h3>Why are vector databases so fast?</h3>
-                        <a href="https://docs.google.com/presentation/d/1BJ4p-p_MX4Jqc03kNGx814xh21e5ZrQWXifBGeYAC4Q/edit?usp=sharing" class="presentation-link" style="color: white; text-decoration: underline;">View Presentation</a>
+                        <a href="https://docs.google.com/presentation/d/1BJ4p-p_MX4Jqc03kNGx814xh21e5ZrQWXifBGeYAC4Q/edit?usp=sharing" class="presentation-link" style="color: white; text-decoration: underline;"><h3>Why are vector databases so fast?</h3></a>
                     </div>
                     <!-- Add other presentations -->
-                    <div class="presentation-item">
-                        <h3>Explained: Image Analysis and Processing in R Programming Language</h3>
-                        <a href="https://docs.google.com/presentation/d/1pet1ds1nMZwNk8XwEC51qtOo6JUA-OGBpjahFPOQmj0/edit?usp=sharing" class="presentation-link" style="color: white; text-decoration: underline;">View Presentation</a>
+                    <div class="presentation-item">           
+                        <a href="https://docs.google.com/presentation/d/1pet1ds1nMZwNk8XwEC51qtOo6JUA-OGBpjahFPOQmj0/edit?usp=sharing" class="presentation-link" style="color: white; text-decoration: underline;"><h3>Explained: Image Analysis and Processing in R Programming Language</h3></a>
                     </div>
                     <div class="presentation-item">
-                        <h3>Open Source 101</h3>
-                        <a href="https://docs.google.com/presentation/d/1psdsgx1bBnqSPTG0o-3LotUbtkDpqpVJE-n1h7DwfTk/edit?usp=sharing" class="presentation-link" style="color: white; text-decoration: underline;">View Presentation</a>
+                        <a href="https://docs.google.com/presentation/d/1psdsgx1bBnqSPTG0o-3LotUbtkDpqpVJE-n1h7DwfTk/edit?usp=sharing" class="presentation-link" style="color: white; text-decoration: underline;"><h3>Open Source 101</h3></a>
                     </div>
                     <div class="presentation-item">
-                        <h3>Intro to the World of AI</h3>
-                        <a href="https://docs.google.com/presentation/d/16VDkij48Xa7NdNV2jk8K3SgXxRd7x8y1DJ1_wSSBc4c/edit?usp=sharing" class="presentation-link" style="color: white; text-decoration: underline;">View Presentation</a>
+                        <a href="https://docs.google.com/presentation/d/16VDkij48Xa7NdNV2jk8K3SgXxRd7x8y1DJ1_wSSBc4c/edit?usp=sharing" class="presentation-link" style="color: white; text-decoration: underline;"><h3>Intro to the World of AI</h3></a>
                     </div>
                 </div>
             `
