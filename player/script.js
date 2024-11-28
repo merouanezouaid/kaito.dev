@@ -551,12 +551,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div style="position: relative; z-index: 2;">
                         <h2>Merouane Zouaid</h2>
                         <p class="bio">Machine Learning Engineering student in Rabat, Morocco.</p>
-                        <p>Co-founder of <a href="https://x.com/merouanezouaid/status/1861161032598569063">ALTs Morocco</a>, an open collective where people work on their own ideas.</p>
-                        <p>Previously Growth Hacker @<a href="https://buildspace.so">buildspace</a> for season 5</p>
-                        <p>Building AI-powered tools like <a href="https://youloop.framer.ai/">YouLoop</a>, <a href="https://github.com/merouanezouaid/dwayat.ai">Dwayat AI</a>, <a href="https://complete-ai.webflow.io/">Complete AI</a>, <a href="https://omates.framer.ai">Omates</a>...</p>
+                        <p>Co-founder of <a href="https://x.com/merouanezouaid/status/1861161032598569063" style="color: white; text-decoration: underline;">ALTs Morocco</a>, an open collective where people work on their own ideas.</p>
+                        <p>Previously Growth Hacker @<a href="https://buildspace.so" style="color: white; text-decoration: underline;">buildspace</a> for season 5</p>
+                        <p>Building AI-powered tools like <a href="https://youloop.framer.ai/" style="color: white; text-decoration: underline;">YouLoop</a>, <a href="https://github.com/merouanezouaid/dwayat.ai" style="color: white; text-decoration: underline;">Dwayat AI</a>, <a href="https://complete-ai.webflow.io/" style="color: white; text-decoration: underline;">Complete AI</a>, <a href="https://omates.framer.ai" style="color: white; text-decoration: underline;">Omates</a>...</p>
                         <p>Launched "30 days of ML," the first ebook in Morocco for machine learning.</p>
-                        <p>Currently building <a href="https://kitaby.ma">kitaby.ma</a>, an online marketplace for new and used books in Morocco.</p>
-                        <p class="fun-fact">Fun fact: I make content on <a href="https://youtube.com/@mekaito">YouTube</a>.</p>
+                        <p>Currently building <a href="https://kitaby.ma" style="color: white; text-decoration: underline;">kitaby.ma</a>, an online marketplace for new and used books in Morocco.</p>
+                        <p class="fun-fact">Fun fact: I make content on <a href="https://youtube.com/@mekaito" style="color: white; text-decoration: underline;">YouTube</a>.</p>
                     </div>
                 </div>
             `
@@ -569,13 +569,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         <h3>zklib-js</h3>
                         <span class="status alive">Active</span>
                         <span class="users">3,000+ users</span>
-                        <a href="https://github.com/merouanezouaid/zklib-js" class="project-link">View Project</a>
+                        <a href="https://github.com/merouanezouaid/zklib-js" class="project-link" style="color: white; text-decoration: underline;">View Project</a>
                     </div>
                     <div class="project-card">
                         <h3>youloop</h3>
                         <span class="status alive">Active</span>
                         <span class="users">300+ users</span>
-                        <a href="https://youloop.framer.ai/" class="project-link">View Project</a>
+                        <a href="https://youloop.framer.ai/" class="project-link" style="color: white; text-decoration: underline;">View Project</a>
                     </div>
                     <!-- Add other projects -->
                 </div>
@@ -586,33 +586,26 @@ document.addEventListener('DOMContentLoaded', function() {
             content: `
                 <div class="highlights-list">
                     <div class="highlight-item">
-                        <span class="highlight-icon">🎥</span>
-                        <p>2.6k YouTube subscribers, 100,000+ views</p>
+                        <p>- 2.6k YouTube subscribers, 100,000+ views</p>
                     </div>
                     <div class="highlight-item">
-                        <span class="highlight-icon">🎤</span>
-                        <p>Public speaker at international conferences: Devoxx, DevFest, Google Creators Summit</p>
+                        <p>- Public speaker at international conferences: Devoxx, DevFest, Google Creators Summit</p>
                     </div>
                     <!-- Add other highlights -->
                     <div class="highlight-item">
-                        <span class="highlight-icon">🏆</span>
-                        <p>Global top 100 Google Solution Challenge for TLDR; AI</p>
+                        <p>- Global top 100 Google Solution Challenge for TLDR; AI</p>
                     </div>
                     <div class="highlight-item">
-                        <span class="highlight-icon">📅</span>
-                        <p>Organized events with 300+ attendees</p>
+                        <p>- Organized tech events with 300+ attendees</p>
                     </div>
                     <div class="highlight-item">
-                        <span class="highlight-icon">👨‍🏫</span>
-                        <p>Machine learning instructor for the Google Developers Certification at GDG</p>
+                        <p>- Machine learning instructor for the Google Developers Certification at GDG</p>
                     </div>
                     <div class="highlight-item">
-                        <span class="highlight-icon">🎙️</span>
-                        <p>Launched a podcast: Today's Deep Dive (using NotebookLM)</p>
+                        <p>- Launched a podcast: Today's Deep Dive (using NotebookLM)</p>
                     </div>
                     <div class="highlight-item">
-                        <span class="highlight-icon">📺</span>
-                        <p>Went live on YouTube for 12 hours straight building Omates</p>
+                        <p>- Went live on YouTube for 12 hours straight building Omates</p>
                     </div>
                 </div>
             `
@@ -623,20 +616,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="presentations-list">
                     <div class="presentation-item">
                         <h3>Why are vector databases so fast?</h3>
-                        <a href="https://docs.google.com/presentation/d/1BJ4p-p_MX4Jqc03kNGx814xh21e5ZrQWXifBGeYAC4Q/edit?usp=sharing" class="presentation-link">View Presentation</a>
+                        <a href="https://docs.google.com/presentation/d/1BJ4p-p_MX4Jqc03kNGx814xh21e5ZrQWXifBGeYAC4Q/edit?usp=sharing" class="presentation-link" style="color: white; text-decoration: underline;">View Presentation</a>
                     </div>
                     <!-- Add other presentations -->
                     <div class="presentation-item">
                         <h3>Explained: Image Analysis and Processing in R Programming Language</h3>
-                        <a href="https://docs.google.com/presentation/d/1pet1ds1nMZwNk8XwEC51qtOo6JUA-OGBpjahFPOQmj0/edit?usp=sharing" class="presentation-link">View Presentation</a>
+                        <a href="https://docs.google.com/presentation/d/1pet1ds1nMZwNk8XwEC51qtOo6JUA-OGBpjahFPOQmj0/edit?usp=sharing" class="presentation-link" style="color: white; text-decoration: underline;">View Presentation</a>
                     </div>
                     <div class="presentation-item">
                         <h3>Open Source 101</h3>
-                        <a href="https://docs.google.com/presentation/d/1psdsgx1bBnqSPTG0o-3LotUbtkDpqpVJE-n1h7DwfTk/edit?usp=sharing" class="presentation-link">View Presentation</a>
+                        <a href="https://docs.google.com/presentation/d/1psdsgx1bBnqSPTG0o-3LotUbtkDpqpVJE-n1h7DwfTk/edit?usp=sharing" class="presentation-link" style="color: white; text-decoration: underline;">View Presentation</a>
                     </div>
                     <div class="presentation-item">
                         <h3>Intro to the World of AI</h3>
-                        <a href="https://docs.google.com/presentation/d/16VDkij48Xa7NdNV2jk8K3SgXxRd7x8y1DJ1_wSSBc4c/edit?usp=sharing" class="presentation-link">View Presentation</a>
+                        <a href="https://docs.google.com/presentation/d/16VDkij48Xa7NdNV2jk8K3SgXxRd7x8y1DJ1_wSSBc4c/edit?usp=sharing" class="presentation-link" style="color: white; text-decoration: underline;">View Presentation</a>
                     </div>
                 </div>
             `
@@ -645,20 +638,20 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Connect With Me",
             content: `
                 <div class="social-links">
-                    <a href="https://x.com/merouanezouaid" class="social-link twitter">
+                    <a href="https://x.com/merouanezouaid" class="social-link twitter" style="color: white; text-decoration: underline;">
                         <i class="bi bi-twitter"></i> Twitter
                     </a>
-                    <a href="https://youtube.com/@mekaito" class="social-link youtube">
+                    <a href="https://youtube.com/@mekaito" class="social-link youtube" style="color: white; text-decoration: underline;">
                         <i class="bi bi-youtube"></i> YouTube
                     </a>
                     <!-- Add other social links -->
-                    <a href="https://github.com/merouanezouaid" class="social-link github">
+                    <a href="https://github.com/merouanezouaid" class="social-link github" style="color: white; text-decoration: underline;">
                         <i class="bi bi-github"></i> GitHub
                     </a>
-                    <a href="https://www.linkedin.com/in/merouanezouaid/" class="social-link linkedin">
+                    <a href="https://www.linkedin.com/in/merouanezouaid/" class="social-link linkedin" style="color: white; text-decoration: underline;">
                         <i class="bi bi-linkedin"></i> LinkedIn
                     </a>
-                    <a href="https://www.instagram.com/kaito.dev/" class="social-link instagram">
+                    <a href="https://www.instagram.com/kaito.dev/" class="social-link instagram" style="color: white; text-decoration: underline;">
                         <i class="bi bi-instagram"></i> Instagram
                     </a>
                 </div>
