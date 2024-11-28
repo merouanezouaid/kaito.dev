@@ -551,12 +551,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div style="position: relative; z-index: 2;">
                         <h2>Merouane Zouaid</h2>
                         <p class="bio">Machine Learning Engineering student in Rabat, Morocco.</p>
-                        <p>Co-founder of Alts Morocco, an open collective where people work on their own ideas.</p>
-                        <p>Previously Growth Hacker @buildspace for season 5</p>
-                        <p>Building AI-powered tools like YouLoop, Dwayat AI, Complete AI, Omates...</p>
+                        <p>Co-founder of <a href="https://x.com/merouanezouaid/status/1861161032598569063">ALTs Morocco</a>, an open collective where people work on their own ideas.</p>
+                        <p>Previously Growth Hacker @<a href="https://buildspace.so">buildspace</a> for season 5</p>
+                        <p>Building AI-powered tools like <a href="https://youloop.framer.ai/">YouLoop</a>, <a href="https://github.com/merouanezouaid/dwayat.ai">Dwayat AI</a>, <a href="https://complete-ai.webflow.io/">Complete AI</a>, <a href="https://omates.framer.ai">Omates</a>...</p>
                         <p>Launched "30 days of ML," the first ebook in Morocco for machine learning.</p>
-                        <p>Currently building kitaby.ma, an online marketplace for new and used books in Morocco.</p>
-                        <p class="fun-fact">Fun fact: I love football! ⚽</p>
+                        <p>Currently building <a href="https://kitaby.ma">kitaby.ma</a>, an online marketplace for new and used books in Morocco.</p>
+                        <p class="fun-fact">Fun fact: I make content on <a href="https://youtube.com/@mekaito">YouTube</a>.</p>
                     </div>
                 </div>
             `
@@ -569,13 +569,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         <h3>zklib-js</h3>
                         <span class="status alive">Active</span>
                         <span class="users">3,000+ users</span>
-                        <a href="#" class="project-link">View Project</a>
+                        <a href="https://github.com/merouanezouaid/zklib-js" class="project-link">View Project</a>
                     </div>
                     <div class="project-card">
                         <h3>youloop</h3>
                         <span class="status alive">Active</span>
                         <span class="users">300+ users</span>
-                        <a href="#" class="project-link">View Project</a>
+                        <a href="https://youloop.framer.ai/" class="project-link">View Project</a>
                     </div>
                     <!-- Add other projects -->
                 </div>
@@ -587,13 +587,33 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="highlights-list">
                     <div class="highlight-item">
                         <span class="highlight-icon">🎥</span>
-                        <p>2.4k YouTube subscribers, 100,000+ views</p>
+                        <p>2.6k YouTube subscribers, 100,000+ views</p>
                     </div>
                     <div class="highlight-item">
                         <span class="highlight-icon">🎤</span>
                         <p>Public speaker at international conferences: Devoxx, DevFest, Google Creators Summit</p>
                     </div>
                     <!-- Add other highlights -->
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🏆</span>
+                        <p>Global top 100 Google Solution Challenge for TLDR; AI</p>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">📅</span>
+                        <p>Organized events with 300+ attendees</p>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">👨‍🏫</span>
+                        <p>Machine learning instructor for the Google Developers Certification at GDG</p>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">🎙️</span>
+                        <p>Launched a podcast: Today's Deep Dive (using NotebookLM)</p>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-icon">📺</span>
+                        <p>Went live on YouTube for 12 hours straight building Omates</p>
+                    </div>
                 </div>
             `
         },
@@ -603,9 +623,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="presentations-list">
                     <div class="presentation-item">
                         <h3>Why are vector databases so fast?</h3>
-                        <a href="#" class="presentation-link">View Presentation</a>
+                        <a href="https://docs.google.com/presentation/d/1BJ4p-p_MX4Jqc03kNGx814xh21e5ZrQWXifBGeYAC4Q/edit?usp=sharing" class="presentation-link">View Presentation</a>
                     </div>
                     <!-- Add other presentations -->
+                    <div class="presentation-item">
+                        <h3>Explained: Image Analysis and Processing in R Programming Language</h3>
+                        <a href="https://docs.google.com/presentation/d/1pet1ds1nMZwNk8XwEC51qtOo6JUA-OGBpjahFPOQmj0/edit?usp=sharing" class="presentation-link">View Presentation</a>
+                    </div>
+                    <div class="presentation-item">
+                        <h3>Open Source 101</h3>
+                        <a href="https://docs.google.com/presentation/d/1psdsgx1bBnqSPTG0o-3LotUbtkDpqpVJE-n1h7DwfTk/edit?usp=sharing" class="presentation-link">View Presentation</a>
+                    </div>
+                    <div class="presentation-item">
+                        <h3>Intro to the World of AI</h3>
+                        <a href="https://docs.google.com/presentation/d/16VDkij48Xa7NdNV2jk8K3SgXxRd7x8y1DJ1_wSSBc4c/edit?usp=sharing" class="presentation-link">View Presentation</a>
+                    </div>
                 </div>
             `
         },
@@ -613,13 +645,22 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Connect With Me",
             content: `
                 <div class="social-links">
-                    <a href="https://twitter.com/your-handle" class="social-link twitter">
+                    <a href="https://x.com/merouanezouaid" class="social-link twitter">
                         <i class="bi bi-twitter"></i> Twitter
                     </a>
-                    <a href="https://youtube.com/your-channel" class="social-link youtube">
+                    <a href="https://youtube.com/@mekaito" class="social-link youtube">
                         <i class="bi bi-youtube"></i> YouTube
                     </a>
                     <!-- Add other social links -->
+                    <a href="https://github.com/merouanezouaid" class="social-link github">
+                        <i class="bi bi-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/merouanezouaid/" class="social-link linkedin">
+                        <i class="bi bi-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/kaito.dev/" class="social-link instagram">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </a>
                 </div>
             `
         }
