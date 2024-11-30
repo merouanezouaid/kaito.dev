@@ -95,8 +95,8 @@ document.addEventListener('DOMContentLoaded', function() {
             albumArt: "https://f4.bcbits.com/img/a3793060197_65"
         },
         {
-            title: "Bohemian Rhapsody",
-            artist: "Queen",
+            title: "OFF+ON",
+            artist: "Veggi Ella Rosa",
             album: "A Night at the Opera",
             duration: 354,
             albumArt: "https://i.scdn.co/image/ab67616d0000b273d254ca497999ae980a5a38c5"
@@ -354,6 +354,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+    const songsList = ["music/Off on- Veggi Ella Rosa.m4a", "music/Find My Way Home- Sammy Virji.m4a", "music/One Of Those Nights- Salute Empress Of.m4a"]
+    
     // Add this to handle audio playback
     const audioPlayer = document.querySelector('#audioPlayer');
 
@@ -749,10 +751,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to switch songs
     function switchSong(direction) {
         if (direction === 'next') {
-            currentSongIndex = (currentSongIndex + 1) % songs.length;
+            currentSongIndex = (currentSongIndex + 1) % songsList.length;
+            console.log(currentSongIndex);
+            audioPlayer.src = songsList[currentSongIndex];
             switchVisualization('next');
         } else {
-            currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
+            currentSongIndex = (currentSongIndex - 1 + songsList.length) % songsList.length;
+            console.log(currentSongIndex);
+            audioPlayer.src = songsList[currentSongIndex];
             switchVisualization('prev');
         }
         
@@ -851,8 +857,16 @@ document.addEventListener('DOMContentLoaded', function() {
     loadSongMetadata();
 
     // Also call it when switching songs (if you have multiple songs)
-    function switchSong(direction) {
-        // ... existing song switching code ...
-        loadSongMetadata();
+    async function switchSong(direction) {
+        if (direction === 'next') {
+            currentSongIndex = (currentSongIndex + 2) % songsList.length;
+        } else {
+            currentSongIndex = (currentSongIndex - 2 + songsList.length) % songsList.length;
+        }
+        const currentSong = songsList[currentSongIndex];
+        const songName = currentSong.substring(currentSong.lastIndexOf('/') + 1, currentSong.lastIndexOf('.'));
+        document.querySelectorAll('.track-name').forEach(el => el.textContent = songName);
+        audioPlayer.src = songsList[currentSongIndex];
+        await audioPlayer.play();
     }
 });
