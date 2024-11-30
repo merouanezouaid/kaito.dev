@@ -119,5 +119,29 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script>
+        // Enable dragging for the window container
+        const container = document.querySelector('.wmp-container');
+        let isDragging = false;
+        let offsetX, offsetY;
+    
+        container.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            offsetX = e.clientX - container.getBoundingClientRect().left;
+            offsetY = e.clientY - container.getBoundingClientRect().top;
+        });
+    
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                container.style.left = `${e.clientX - offsetX}px`;
+                container.style.top = `${e.clientY - offsetY}px`;
+                container.style.position = 'absolute'; // Ensure the container is positioned absolutely
+            }
+        });
+    
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+    </script>
 </body>
 </html> 
